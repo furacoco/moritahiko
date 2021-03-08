@@ -1,0 +1,197 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  font-family: "Noto Serif JP", serif;
+  background: #303030;
+  color: #ddd;
+}
+img {
+  max-width: 100%;
+  margin: 0;
+}
+a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  list-style: none;
+  color: #ddd;
+}
+a:hover {
+  color: #948975;
+  transition: 0.7s;
+}
+header img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 7%;
+}
+header h1 {
+  font-size: 1.7rem;
+  text-align: center;
+}
+main h2 {
+  font-size: 1rem;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 7%;
+}
+.head_text,
+.main_text {
+  text-align: center;
+  line-height: 2;
+  margin-bottom: 5%;
+}
+.shop_info {
+  display: flex;
+  justify-content: center;
+  padding: 2% 10%;
+  margin-bottom: 7%;
+}
+.address {
+  line-height: 2;
+  margin-left: 5%;
+  width: 100%;
+}
+.address a {
+  color: #ddd;
+}
+main nav {
+  margin-bottom: 2%;
+}
+main ul {
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  margin: 0 auto;
+}
+main li {
+  list-style: none;
+  width: 5rem;
+}
+nav span {
+  color: #948975;
+  border-bottom: solid 1px;
+}
+.fade-in {
+  opacity: 0;
+  transition-duration: 2s;
+  transition-property: opacity, transform;
+  transform: translate(0, 50px);
+}
+.scroll-in {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.google_map {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 30%;
+}
+.google_map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.copy {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 3%;
+}
+.menu_upper,
+.menu_center,
+.menu_lower {
+  display: flex;
+  justify-content: space-around;
+}
+.menu_box {
+  margin: 2%;
+}
+.menu_box p {
+  text-align: center;
+  line-height: 1.7;
+  padding: 5%;
+}
+.flannel {
+  font-size: 0.8rem;
+}
+.other_text {
+  text-align: right;
+  margin: 0 2% 7% 0;
+}
+@media screen and (max-width: 599px) {
+  header h1 {
+    padding: 10%;
+  }
+  .menu_header {
+    padding: 10% 0 0;
+  }
+  header img {
+    margin-bottom: 15%;
+  }
+  .about_icon {
+    width: 100%;
+  }
+  .head_text,
+  .main_text {
+    font-size: 0.8rem;
+    margin-bottom: 8%;
+  }
+  .shop_info {
+    display: block;
+  }
+  .address,
+  .google_map {
+    margin: 0 auto 10%;
+    font-size: 0.9rem;
+  }
+  .google_map {
+    padding-top: 70%;
+  }
+  main h2 {
+    margin-bottom: 14%;
+    font-size: 0.9rem;
+  }
+  main nav {
+    margin-bottom: 5%;
+  }
+  main ul {
+    font-size: 0.8rem;
+  }
+  main li {
+    width: 4rem;
+  }
+  .copy {
+    margin-bottom: 8%;
+    font-size: 0.6rem;
+  }
+  .menu_box p {
+    font-size: 0.8rem;
+    padding: 3% 0 5%;
+  }
+  .flannel {
+    font-size: 0.7rem;
+  }
+  .other_text {
+    font-size: 0.8rem;
+    margin: 3% 0 14%;
+    text-align: center;
+  }
+  .menu_upper,
+  .menu_center,
+  .menu_lower {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .about_icon {
+    display: none;
+  }
+}

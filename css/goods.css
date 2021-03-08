@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  font-family: "Noto Serif JP", serif;
+  background: #303030;
+  color: #ddd;
+}
+img {
+  max-width: 100%;
+  margin: 0;
+}
+a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  list-style: none;
+  color: #ddd;
+}
+a:hover {
+  color: #948975;
+  transition: 0.7s;
+}
+header h1 {
+  font-size: 1.7rem;
+  text-align: center;
+}
+select {
+  width: 100%;
+  padding: 2%;
+  font-size: 1.1rem;
+  background: #ddd;
+}
+.select_btn {
+  width: 50%;
+  margin: 3% auto 7%;
+}
+.goods_title {
+  width: 15rem;
+  margin: 0 auto;
+  font-size: 1.3rem;
+  border-bottom: solid 1px;
+  text-align: center;
+  padding-bottom: 1%;
+  margin-bottom: 3%;
+}
+.goods_container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5%;
+}
+.goods_box {
+  margin: 2%;
+  position: relative;
+}
+.goods_box p {
+  text-align: center;
+  line-height: 1.7;
+  padding: 5%;
+}
+main nav {
+  margin-bottom: 2%;
+}
+main ul {
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  margin: 0 auto;
+}
+main li {
+  list-style: none;
+  width: 5rem;
+}
+main span {
+  color: #948975;
+  border-bottom: solid 1px;
+}
+.copy {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+@media screen and (max-width: 599px) {
+  header h1 {
+    padding: 10% 0 0;
+  }
+  .about_icon {
+    width: 100%;
+  }
+  select {
+    width: 100%;
+    padding: 2%;
+    font-size: 1rem;
+  }
+  .select_btn {
+    width: 70%;
+    margin: 10% auto;
+  }
+  .goods_title {
+    width: 11rem;
+    font-size: 1rem;
+    margin-bottom: 5%;
+    padding-bottom: 2%;
+  }
+  .goods_box p {
+    font-size: 0.9rem;
+  }
+  main nav {
+    margin: 10% 0 5%;
+  }
+  main ul {
+    font-size: 0.8rem;
+  }
+  main li {
+    width: 4rem;
+  }
+  .copy {
+    margin-bottom: 8%;
+    font-size: 0.6rem;
+  }
+}
+@media screen and (min-width: 600px) {
+  .about_icon {
+    display: none;
+  }
+}

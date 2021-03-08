@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="森田彦コーヒーでは、ドリッパーやコーヒーミルなど
+      ご自宅でハンドドリップを楽しめるコーヒーグッズを店内で販売しております。
+    "
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/goods.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Goods｜森田彦コーヒー</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="menu_header">Goods</h1>
+      <svg
+        class="about_icon"
+        xmlns="http://www.w3.org/2000/svg"
+        width="34"
+        height="34"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="rgba(221,221,221,0.8)"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M7 13l5 5 5-5M7 6l5 5 5-5" />
+      </svg>
+    </header>
+    <main>
+      <div class="select_btn">
+        <select id="select_box" onchange="change();">
+          <option value="1">コーヒー豆を準備する</option>
+          <option value="2">コーヒーを淹れる</option>
+          <option value="3">コーヒーを楽しむ</option>
+        </select>
+      </div>
+      <div id="txt1" class="goods_ready">
+        <h2 class="goods_title">コーヒー豆を準備する</h2>
+        <div class="goods_container">
+          <!-- goods_box *2 -->
+          <div class="goods_box">
+            <img src="images/goods.jpeg" alt="" />
+            <p>計量スプーン<br />¥330（税込）</p>
+          </div>
+          <div class="goods_box">
+            <img src="images/goods.jpeg" alt="" />
+            <p>ステンレスクリップ<br />¥550（税込）</p>
+          </div>
+        </div>
+        <div class="goods_container">
+          <div class="goods_box">
+            <img src="images/goods.jpeg" alt="" />
+            <p>コーヒーミル<br />¥3,272（税込）</p>
+          </div>
+          <div class="goods_box">
+            <img src="images/goods.jpeg" alt="" />
+            <p>ドリップスケール<br />¥5,610（税込）</p>
+          </div>
+        </div>
+      </div>
+      <div id="txt2" class="goods_drip" style="display: none">
+        <h2 class="goods_title">コーヒーを淹れる</h2>
+        <div class="goods_container">
+          <div class="goods_box">
+            <img src="images/espresso.jpeg" alt="" />
+            <p>コーヒードリッパー<br />¥841（税込）</p>
+          </div>
+          <div class="goods_box">
+            <img src="images/espresso.jpeg" alt="" />
+            <p>ペーパーフィルター<br />¥330（税込）</p>
+          </div>
+        </div>
+        <div class="goods_container">
+          <div class="goods_box">
+            <img src="images/espresso.jpeg" alt="" />
+            <p>コーヒーサーバー<br />¥1,188（税込）</p>
+          </div>
+          <div class="goods_box">
+            <img src="images/espresso.jpeg" alt="" />
+            <p>ドリップケトル<br />¥4,752（税込）</p>
+          </div>
+        </div>
+      </div>
+      <div id="txt3" class="goods_enjoy" style="display: none">
+        <h2 class="goods_title">コーヒーを楽しむ</h2>
+        <div class="goods_container">
+          <div class="goods_box">
+            <img src="images/coffee.jpeg" alt="" />
+            <p>コーヒーカップ<br />¥1,540（税込）</p>
+          </div>
+          <div class="goods_box">
+            <img src="images/coffee.jpeg" alt="" />
+            <p>アロママグ<br />¥1,650（税込）</p>
+          </div>
+        </div>
+        <div class="goods_container">
+          <div class="goods_box">
+            <img src="images/coffee.jpeg" alt="" />
+            <p>木製コースター<br />¥713（税込）</p>
+          </div>
+          <div class="goods_box">
+            <img src="images/coffee.jpeg" alt="" />
+            <p>コーヒーボトル<br />¥1,980（税込）</p>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <a href="index.html">
+            <li>&gt; home</li>
+          </a>
+          <a href="about.html">
+            <li>&gt; about</li>
+          </a>
+          <a href="menu.html">
+            <li>&gt; menu</li>
+          </a>
+          <a href="shop.html">
+            <li>&gt; shop</li>
+          </a>
+          <li>&gt; <span>goods</span></li>
+        </ul>
+      </nav>
+      <p class="copy">
+        <small>&copy; MASAO'S CAFE All Rights Reserved.</small>
+      </p>
+    </main>
+    <script src="js/index.js"></script>
+  </body>
+</html>
